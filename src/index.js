@@ -6,7 +6,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 
 import routes from './routes';
-import database from './config/database';
+
 import {
   appErrorHandler,
   genericErrorHandler,
@@ -27,7 +27,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(morgan('combined', { stream: logStream }));
 
-database();
 
 app.use(`/api/${api_version}`, routes());
 app.use(appErrorHandler);

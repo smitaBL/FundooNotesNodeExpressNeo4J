@@ -1,39 +1,32 @@
-import User from '../models/user.model';
-
-//get all users
-export const getAllUsers = async () => {
-  const data = await User.find();
-  return data;
-};
+import { session } from '../models/user.model'
+import { uid } from 'uid';
+import bcrypt from 'bcrypt'
 
 //create new user
-export const newUser = async (body) => {
-  const data = await User.create(body);
-  return data;
-};
+export const registerNewUser = async (body) => {
 
-//update single user
-export const updateUser = async (_id, body) => {
-  const data = await User.findByIdAndUpdate(
-    {
-      _id
-    },
-    body,
-    {
-      new: true
-    }
+  const { firstName, lastName, email, password } = body;
+
+  const saltRounds = 10;
+  const hashedPassword = await bcrypt.hash(password, saltRounds); // You can adjust the salt rounds as needed
+
+  const existingUserResult = await session.run(
+    'MATCH (u:User {firstName: $firstName}) RETURN u',
+    { firstName }
   );
-  return data;
+
+  if (existingUserResult.records.length > 0) {
+    throw new Error("Username already exists")
+  }
+
+  let _id = uid();
+
+  const createUserResult = await session.run(
+    'CREATE (u:User { _id : $_id,firstName: $firstName, lastName:$lastName, email:$email, password:$password}) RETURN u',
+    { _id, firstName, lastName, email, password: hashedPassword }
+  );
+
+  const createdUser = createUserResult.records[0].get('u').properties;
+  return createdUser
 };
 
-//delete single user
-export const deleteUser = async (id) => {
-  await User.findByIdAndDelete(id);
-  return '';
-};
-
-//get single user
-export const getUser = async (id) => {
-  const data = await User.findById(id);
-  return data;
-};

@@ -1,2 +1,172 @@
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-02T08:33:51.896Z"}
 info: Connected to the database. {"timestamp":"2023-09-02T08:33:54.701Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T17:14:21.404Z"}
+info: Connected to the database. {"timestamp":"2023-09-03T17:14:23.892Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T17:27:47.478Z"}
+info: Connected to the database. {"timestamp":"2023-09-03T17:27:50.704Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T17:28:03.535Z"}
+info: Connected to the database. {"timestamp":"2023-09-03T17:28:05.852Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T17:28:26.500Z"}
+info: Connected to the database. {"timestamp":"2023-09-03T17:28:28.796Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:25:40.371Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:30:38.985Z"}
+error: 
+    status - 500 
+    message - ReferenceError: bcrypt is not defined
+    at _callee$ (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/services/user.service.js:9:24)
+    at tryCatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at Object.apply (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:12)
+    at Object.registerNewUser (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/services/user.service.js:5:29)
+    at _callee$ (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/controllers/user.controller.js:13:36)
+    at tryCatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:7
+    at new Promise (<anonymous>)
+    at apply (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:12)
+    at registerNewUser (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/controllers/user.controller.js:11:29)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:346:12)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:175:3)
+    at router (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:328:13)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:346:12)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:175:3)
+    at router (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:328:13)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:346:12)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:280:10)
+    at logger (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:328:13)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:346:12)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:280:10)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/raw-body/index.js:231:16) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2023-09-03T18:33:10.771Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:33:44.233Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:33:57.368Z"}
+error: 
+    status - 500 
+    message - ReferenceError: username is not defined
+    at _callee$ (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/services/user.service.js:15:7)
+    at tryCatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2023-09-03T18:34:04.260Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:34:33.761Z"}
+error: 
+    status - 500 
+    message - ReferenceError: username is not defined
+    at _callee$ (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/services/user.service.js:15:7)
+    at tryCatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2023-09-03T18:34:38.066Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:35:10.775Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:35:26.029Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:35:27.825Z"}
+error: 
+    status - 500 
+    message - ReferenceError: username is not defined
+    at _callee$ (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/services/user.service.js:15:7)
+    at tryCatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2023-09-03T18:35:30.404Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:35:54.389Z"}
+error: 
+    status - 500 
+    message - TypeError: _neo4jDriver.session.run is not a function
+    at _callee$ (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/services/user.service.js:13:44)
+    at tryCatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2023-09-03T18:35:59.725Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:38:41.601Z"}
+error: 
+    status - 500 
+    message - Neo4jError: Expected parameter(s): hasedPassword
+: 
+    at captureStacktrace (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/neo4j-driver-core/lib/result.js:611:17)
+    at new Result (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/neo4j-driver-core/lib/result.js:105:23)
+    at Session._run (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/neo4j-driver-core/lib/session.js:230:16)
+    at Session.run (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/neo4j-driver-core/lib/session.js:180:27)
+    at _callee$ (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/services/user.service.js:24:42)
+    at tryCatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2023-09-03T18:38:50.045Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:40:22.352Z"}
+error: 
+    status - 500 
+    message - Error: Username already exists
+    at _callee$ (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/services/user.service.js:19:11)
+    at tryCatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:45:16)
+    at Generator.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:133:17)
+    at Generator.next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/regeneratorRuntime.js:74:21)
+    at asyncGeneratorStep (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2023-09-03T18:40:35.784Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:40:53.422Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:41:12.833Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:41:33.085Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:42:45.303Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:42:56.223Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:43:59.376Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:44:22.604Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:45:15.553Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:45:33.068Z"}

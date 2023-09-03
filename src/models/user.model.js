@@ -1,14 +1,18 @@
-import { Schema, model } from 'mongoose';
 
-const userSchema = new Schema(
-  {
-    name: {
-      type: String
-    }
-  },
-  {
-    timestamps: true
-  }
-);
+// const neo4j = require('neo4j-driver');
+import neo4j from 'neo4j-driver'
 
-export default model('User', userSchema);
+import dotenv from 'dotenv';
+dotenv.config();
+
+
+
+const driver = neo4j.driver(process.env.URL,
+  neo4j.auth.basic(process.env.USER_NAME, process.env.PASSWORD),
+  {/* encrypted: 'ENCRYPTION_OFF' */ });
+
+
+
+export const session = driver.session(process.env.DATABASE);
+
+

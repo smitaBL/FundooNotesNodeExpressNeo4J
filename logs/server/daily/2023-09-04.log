@@ -1,3 +1,4 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:30:38.985Z"}
 error: 
     status - 500 
     message - ReferenceError: bcrypt is not defined
@@ -55,6 +56,8 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2023-09-03T18:33:10.771Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:33:44.233Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:33:57.368Z"}
 error: 
     status - 500 
     message - ReferenceError: username is not defined
@@ -68,6 +71,7 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2023-09-03T18:34:04.260Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:34:33.761Z"}
 error: 
     status - 500 
     message - ReferenceError: username is not defined
@@ -81,6 +85,9 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2023-09-03T18:34:38.066Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:35:10.775Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:35:26.029Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:35:27.825Z"}
 error: 
     status - 500 
     message - ReferenceError: username is not defined
@@ -94,6 +101,7 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2023-09-03T18:35:30.404Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:35:54.389Z"}
 error: 
     status - 500 
     message - TypeError: _neo4jDriver.session.run is not a function
@@ -107,6 +115,7 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2023-09-03T18:35:59.725Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:38:41.601Z"}
 error: 
     status - 500 
     message - Neo4jError: Expected parameter(s): hasedPassword
@@ -126,6 +135,7 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2023-09-03T18:38:50.045Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:40:22.352Z"}
 error: 
     status - 500 
     message - Error: Username already exists
@@ -140,3 +150,12 @@ error:
     method - POST 
     IP - ::ffff:127.0.0.1
    {"timestamp":"2023-09-03T18:40:35.784Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:40:53.422Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:41:12.833Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:41:33.085Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:42:45.303Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:42:56.223Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:43:59.376Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:44:22.604Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:45:15.553Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-03T18:45:33.068Z"}
