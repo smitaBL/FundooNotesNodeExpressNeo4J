@@ -52,3 +52,9 @@ info: ::ffff:127.0.0.1 - - [04/Sep/2023:03:58:05 +0000] "POST /api/v1/users HTTP
 
 info: ::ffff:127.0.0.1 - - [04/Sep/2023:03:58:18 +0000] "POST /api/v1/users HTTP/1.1" 400 55 "-" "Thunder Client (https://www.thunderclient.com)"
 
+info: ::ffff:127.0.0.1 - - [04/Sep/2023:04:14:18 +0000] "POST /api/v1/users HTTP/1.1" 400 55 "-" "Thunder Client (https://www.thunderclient.com)"
+
+info: ::ffff:127.0.0.1 - - [04/Sep/2023:04:14:27 +0000] "POST /api/v1/users/login HTTP/1.1" 400 59 "-" "Thunder Client (https://www.thunderclient.com)"
+
+info: ::ffff:127.0.0.1 - - [04/Sep/2023:04:14:58 +0000] "POST /api/v1/users/login HTTP/1.1" 201 227 "-" "Thunder Client (https://www.thunderclient.com)"
+
