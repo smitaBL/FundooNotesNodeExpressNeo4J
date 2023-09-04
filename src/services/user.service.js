@@ -11,8 +11,8 @@ export const registerNewUser = async (body) => {
   const hashedPassword = await bcrypt.hash(password, saltRounds); // You can adjust the salt rounds as needed
 
   const existingUserResult = await session.run(
-    'MATCH (u:User {firstName: $firstName}) RETURN u',
-    { firstName }
+    'MATCH (u:User {email: $email}) RETURN u',
+    { email }
   );
 
   if (existingUserResult.records.length > 0) {
