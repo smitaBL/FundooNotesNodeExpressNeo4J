@@ -24,5 +24,21 @@ export const createNote = async (req, res, next) => {
     }
 };
 
+export const getAllNote = async (req, res, next) => {
+    try {
+        const data = await noteService.getAllNote(req.body);
+        res.status(HttpStatus.CREATED).json({
+            code: HttpStatus.CREATED,
+            data: data,
+            message: ' Retrived notes successfully'
+        });
+    } catch (error) {
+        res.status(HttpStatus.BAD_REQUEST).json({
+            code: HttpStatus.BAD_REQUEST,
+            message: `${error}`
+        });
+    }
+};
+
 
 

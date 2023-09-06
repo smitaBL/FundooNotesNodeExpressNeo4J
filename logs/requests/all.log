@@ -182,3 +182,11 @@ info: ::ffff:127.0.0.1 - - [06/Sep/2023:09:54:06 +0000] "POST /api/v1/note HTTP/
 
 info: ::ffff:127.0.0.1 - - [06/Sep/2023:09:54:57 +0000] "POST /api/v1/note HTTP/1.1" 201 351 "-" "Thunder Client (https://www.thunderclient.com)"
 
+info: ::ffff:127.0.0.1 - - [06/Sep/2023:11:18:56 +0000] "GET /api/v1/note HTTP/1.1" 401 55 "-" "Thunder Client (https://www.thunderclient.com)"
+
+info: ::ffff:127.0.0.1 - - [06/Sep/2023:11:19:04 +0000] "POST /api/v1/users/login HTTP/1.1" 201 226 "-" "Thunder Client (https://www.thunderclient.com)"
+
+info: ::ffff:127.0.0.1 - - [06/Sep/2023:11:19:33 +0000] "GET /api/v1/note HTTP/1.1" 401 57 "-" "Thunder Client (https://www.thunderclient.com)"
+
+info: ::ffff:127.0.0.1 - - [06/Sep/2023:11:20:01 +0000] "GET /api/v1/note HTTP/1.1" 201 584 "-" "Thunder Client (https://www.thunderclient.com)"
+

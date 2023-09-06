@@ -32,6 +32,31 @@ export const createNote = async (body) => {
 };
 
 
+export const getAllNote = async (body) => {
+
+    const { userId } = body;
+
+
+    const cypherQuery = `
+    MATCH (user:User {email: $userId})-[:CREATED]->(note:Note)
+    RETURN user, collect(note) AS notes
+  `;
+
+    const result = await session.run(cypherQuery, { userId });
+
+
+    const records = result.records;
+
+    const responseData = records.map(record => ({
+        user: record.get('user').properties,
+        notes: record.get('notes').map(noteNode => noteNode.properties)
+    }));
+
+    return responseData;
+};
+
+
+
 
 
 
