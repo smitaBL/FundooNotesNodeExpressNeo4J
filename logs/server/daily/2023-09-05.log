@@ -1,0 +1,85 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:39:11.684Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:39:56.713Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:41:24.001Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:41:31.458Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:41:47.145Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:42:14.286Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:42:43.280Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:43:04.976Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:43:16.681Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:44:46.284Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:45:41.907Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:45:51.941Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:46:02.270Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:46:39.483Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:47:30.444Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:47:51.577Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:48:13.387Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:48:47.943Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:49:31.920Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:50:23.313Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:50:31.153Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:50:59.649Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:51:39.285Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:52:07.279Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:53:12.784Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:54:12.852Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:54:24.677Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T10:54:49.608Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:28:56.946Z"}
+error: 
+    status - 500 
+    message - ReferenceError: HttpStatus is not defined
+    at newUserValidator (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/validators/user.validator.js:12:16)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:346:12)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:175:3)
+    at router (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:328:13)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:346:12)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:175:3)
+    at router (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:328:13)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:346:12)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:280:10)
+    at logger (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/morgan/index.js:144:5)
+    at Layer.handle [as handle_request] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:328:13)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:346:12)
+    at next (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/router/index.js:280:10)
+    at /home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/body-parser/lib/read.js:137:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/raw-body/index.js:231:16)
+    at done (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/raw-body/index.js:220:7)
+    at IncomingMessage.onEnd (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/raw-body/index.js:280:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/users 
+    method - POST 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2023-09-05T12:29:35.381Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:31:26.277Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:34:57.755Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:36:08.400Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:37:25.427Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:37:45.328Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:38:11.483Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:38:23.326Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:39:21.203Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:39:45.400Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:40:26.877Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:42:13.101Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-09-05T12:42:20.277Z"}
