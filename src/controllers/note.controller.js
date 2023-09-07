@@ -57,5 +57,21 @@ export const updateNoteDetail = async (req, res) => {
 };
 
 
+export const deleteNote = async (req, res) => {
+    try {
+        const data = await noteService.deleteNote(req.body.userId, req.params.id);
+        res.status(HttpStatus.CREATED).json({
+            code: HttpStatus.CREATED,
+            message: 'Note deleted successfully'
+        });
+    } catch (error) {
+        res.status(HttpStatus.BAD_REQUEST).json({
+            code: HttpStatus.BAD_REQUEST,
+            message: `${error}`
+        });
+    }
+};
+
+
 
 

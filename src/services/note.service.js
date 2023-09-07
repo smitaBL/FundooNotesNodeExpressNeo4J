@@ -75,6 +75,20 @@ export const updateNoteDetail = async (body, noteId) => {
 }
 
 
+export const deleteNote = async (userId, noteId) => {
+
+  const cypherQuery = `
+      MATCH (user:User {email: $userId})-[:CREATED]->(note:Note {id: $noteId})
+      DETACH DELETE note
+    `;
+
+  await session.run(cypherQuery, { userId, noteId });
+
+  return " ";
+
+}
+
+
 
 
 

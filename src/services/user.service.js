@@ -31,7 +31,7 @@ export const registerNewUser = async (body) => {
   );
 
   const createdUser = createUserResult.records[0].get('u').properties;
-  console.log("db res afther create operation----------------->", createdUser)
+
 
   return createdUser
 };
