@@ -8,7 +8,7 @@ import * as noteService from '../services/note.service';
  * @param {object} res - response object
  * @param {Function} next
  */
-export const createNote = async (req, res, next) => {
+export const createNote = async (req, res) => {
     try {
         const data = await noteService.createNote(req.body);
         res.status(HttpStatus.CREATED).json({
@@ -24,11 +24,11 @@ export const createNote = async (req, res, next) => {
     }
 };
 
-export const getAllNote = async (req, res, next) => {
+export const getAllNote = async (req, res) => {
     try {
         const data = await noteService.getAllNote(req.body);
-        res.status(HttpStatus.CREATED).json({
-            code: HttpStatus.CREATED,
+        res.status(HttpStatus.OK).json({
+            code: HttpStatus.OK,
             data: data,
             message: ' Retrived notes successfully'
         });
@@ -39,6 +39,23 @@ export const getAllNote = async (req, res, next) => {
         });
     }
 };
+
+export const updateNoteDetail = async (req, res) => {
+    try {
+        const data = await noteService.updateNoteDetail(req.body, req.params.id);
+        res.status(HttpStatus.CREATED).json({
+            code: HttpStatus.CREATED,
+            data: data,
+            message: 'Note details updated successfully'
+        });
+    } catch (error) {
+        res.status(HttpStatus.BAD_REQUEST).json({
+            code: HttpStatus.BAD_REQUEST,
+            message: `${error}`
+        });
+    }
+};
+
 
 
 

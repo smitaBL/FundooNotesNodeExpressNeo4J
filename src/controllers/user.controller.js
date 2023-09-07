@@ -8,7 +8,7 @@ import * as UserService from '../services/user.service';
  * @param {object} res - response object
  * @param {Function} next
  */
-export const registerNewUser = async (req, res, next) => {
+export const registerNewUser = async (req, res) => {
   try {
     const data = await UserService.registerNewUser(req.body);
     res.status(HttpStatus.CREATED).json({
@@ -30,7 +30,7 @@ export const registerNewUser = async (req, res, next) => {
  * @param {object} res - response object
  * @param {Function} next
  */
-export const userLogin = async (req, res, next) => {
+export const userLogin = async (req, res) => {
   try {
     const data = await UserService.userLogin(req.body);
     res.status(HttpStatus.CREATED).json({
