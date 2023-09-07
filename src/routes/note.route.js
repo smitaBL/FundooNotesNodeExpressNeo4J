@@ -13,6 +13,9 @@ router.post('', userAuth, noteController.createNote);
 router.get('', userAuth, noteController.getAllNote);
 
 //route to create a new user
+router.get('/:id', userAuth, noteController.getNoteDetails);
+
+//route to create a new user
 router.put('/:id', userAuth, noteController.updateNoteDetail);
 
 //route to create a new user

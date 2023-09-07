@@ -22,8 +22,7 @@ export const createNote = async (body) => {
   const result = await session.run(cypherQuery, { title, content, userId, id, createdAt });
 
   if (result.records.length === 0) {
-    console.log('No results found.');
-
+    throw new Error("No results found.")
   }
 
   const createdNote = result.records[0].get('createdNote');
@@ -36,14 +35,12 @@ export const getAllNote = async (body) => {
 
   const { userId } = body;
 
-
   const cypherQuery = `
     MATCH (user:User {email: $userId})-[:CREATED]->(note:Note)
     RETURN user, collect(note) AS notes
   `;
 
   const result = await session.run(cypherQuery, { userId });
-
 
   const records = result.records;
 
@@ -55,6 +52,23 @@ export const getAllNote = async (body) => {
   return responseData;
 };
 
+
+
+export const getNoteDetails = async (userId, noteId) => {
+
+  const cypherQuery = `
+  MATCH (user:User {email: $userId})-[:CREATED]->(note:Note {id: $noteId})
+  RETURN note
+`;
+
+  const result = await session.run(cypherQuery, { userId, noteId });
+
+  if (result.records.length === 0) {
+    throw new Error("No results found.")
+  }
+  const note = result.records[0].get('note');
+  return note.properties;
+}
 
 
 export const updateNoteDetail = async (body, noteId) => {

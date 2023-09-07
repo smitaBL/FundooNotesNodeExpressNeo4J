@@ -40,6 +40,23 @@ export const getAllNote = async (req, res) => {
     }
 };
 
+
+export const getNoteDetails = async (req, res) => {
+    try {
+        const data = await noteService.getNoteDetails(req.body.userId, req.params.id);
+        res.status(HttpStatus.CREATED).json({
+            code: HttpStatus.CREATED,
+            data: data,
+            message: 'Note details retrived successfully'
+        });
+    } catch (error) {
+        res.status(HttpStatus.BAD_REQUEST).json({
+            code: HttpStatus.BAD_REQUEST,
+            message: `${error}`
+        });
+    }
+};
+
 export const updateNoteDetail = async (req, res) => {
     try {
         const data = await noteService.updateNoteDetail(req.body, req.params.id);
