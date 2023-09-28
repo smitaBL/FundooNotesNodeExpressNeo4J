@@ -214,3 +214,58 @@ info: ::ffff:127.0.0.1 - - [07/Sep/2023:08:36:54 +0000] "PUT /api/v1/note/1 HTTP
 
 info: ::ffff:127.0.0.1 - - [07/Sep/2023:08:36:54 +0000] "PUT /api/v1/note/1 HTTP/1.1" 201 115 "-" "Thunder Client (https://www.thunderclient.com)"
 
+error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at Function.listen (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/index.js:39:5)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Module._compile (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/pirates/lib/index.js:117:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Object.newLoader [as .js] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/pirates/lib/index.js:121:7)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Function.runMain (node:internal/modules/run_main:81:12)
+    at Object.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/node/src/_babel-node.ts:222:12)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:22:47 {"date":"Thu Sep 28 2023 17:39:35 GMT+0530 (India Standard Time)","error":{"address":"::","code":"EADDRINUSE","errno":-98,"port":3000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0.81,0.56,0.76],"uptime":25171.84},"process":{"argv":["node","/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/index.js"],"cwd":"/home/user/CFPWorkSpace/neo4j-Project/neo4j-project.","execPath":"/usr/bin/node","gid":1000,"memoryUsage":{"arrayBuffers":1481646,"external":10203166,"heapTotal":96890880,"heapUsed":71992288,"rss":151785472},"pid":19412,"uid":1000,"version":"v16.20.2"},"stack":"Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (node:net:1463:16)\n    at listenInCluster (node:net:1511:12)\n    at Server.listen (node:net:1599:7)\n    at Function.listen (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/application.js:635:24)\n    at Object.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/index.js:39:5)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Module._compile (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/pirates/lib/index.js:117:24)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at Object.newLoader [as .js] (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/pirates/lib/index.js:121:7)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)\n    at Function.runMain (node:internal/modules/run_main:81:12)\n    at Object.<anonymous> (/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/node/src/_babel-node.ts:222:12)\n    at Module._compile (node:internal/modules/cjs/loader:1198:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)\n    at Module.load (node:internal/modules/cjs/loader:1076:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:911:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)\n    at node:internal/main/run_main_module:22:47","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1463,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1511,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1599,"method":"listen","native":false},{"column":24,"file":"/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/express/lib/application.js","function":"Function.listen","line":635,"method":"listen","native":false},{"column":5,"file":"/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./src/index.js","function":null,"line":39,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":24,"file":"/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/pirates/lib/index.js","function":"Module._compile","line":117,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":7,"file":"/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/pirates/lib/index.js","function":"Object.newLoader [as .js]","line":121,"method":"js]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.runMain","line":81,"method":"runMain","native":false},{"column":12,"file":"/home/user/CFPWorkSpace/neo4j-Project/neo4j-project./node_modules/@babel/node/src/_babel-node.ts","function":null,"line":222,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1198,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1252,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1076,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":911,"method":"_load","native":false},{"column":12,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":81,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":47,"file":"node:internal/main/run_main_module","function":null,"line":22,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:10:05 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:10:05 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 8080 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:10:05 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 200 151211 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:10:05 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 200 230640 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:10:05 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 200 1385016 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:10:06 +0000] "GET /api-docs/favicon-16x16.png HTTP/1.1" - - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:11:18 +0000] "POST /api/v1/users HTTP/1.1" 400 342 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:12:42 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:12:42 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:12:42 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:12:42 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:12:42 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:12:42 +0000] "GET /api-docs/favicon-16x16.png HTTP/1.1" - - "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:19:00 +0000] "POST /api/v1/users HTTP/1.1" 201 221 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:19:29 +0000] "POST /api/v1/users/login HTTP/1.1" 201 222 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:20:33 +0000] "POST /api/v1/note HTTP/1.1" 201 317 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
+info: ::ffff:127.0.0.1 - - [28/Sep/2023:12:28:18 +0000] "GET /api/v1/note HTTP/1.1" 200 387 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/117.0"
+
